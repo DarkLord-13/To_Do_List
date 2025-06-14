@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "list_items", schema = "todo")
-public class listItem{
+public class ListItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // auto generated
     private Long id;
@@ -27,7 +27,7 @@ public class listItem{
     @Column(name = "task_updated_at", nullable = false)
     private String taskUpdatedAt = java.time.LocalDateTime.now().toString();
 
-    public listItem(String taskName){
+    public ListItem(String taskName){
         this.taskName = taskName;
     }
 }

@@ -1,6 +1,4 @@
 package com.toDoList.toDoList.controller;
 
-
-public class listController{
-
+public class ListDisplayController {
 }
