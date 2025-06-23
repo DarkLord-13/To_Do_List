@@ -25,6 +25,17 @@ This is a robust Todo List application built with Spring Boot that allows users 
 - MySQL Server
 - Your favorite IDE (IntelliJ IDEA recommended)
 
+## Swagger
+![image](https://github.com/user-attachments/assets/7827ae7f-b651-46b8-b54d-81e6a9eca5de)
+
+## Postman
+![image](https://github.com/user-attachments/assets/a03ce270-c431-4017-8ddf-3a34a16b1512)
+![image](https://github.com/user-attachments/assets/be802166-7fa3-4042-b0a6-22672362fac8)
+![image](https://github.com/user-attachments/assets/c0a6faaa-8aaa-4421-84d7-edc25a0536fb)
+
+
+
+
 ## Database Setup
 The application is configured to connect to a MySQL database named `todo`. Before running the application, make sure to:
 
@@ -34,7 +45,12 @@ The application is configured to connect to a MySQL database named `todo`. Befor
 spring.datasource.url=jdbc:mysql://localhost:3306/todo 
 spring.datasource.username=your_user_name
 spring.datasource.password=your_pass_word
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
 ```
+![image](https://github.com/user-attachments/assets/1a430642-93d0-44d7-8645-426f3c315c2e)
 
 ## Project Structure
 ```
