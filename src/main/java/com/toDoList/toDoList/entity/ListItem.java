@@ -1,9 +1,7 @@
 package com.toDoList.toDoList.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @Entity
@@ -18,10 +16,10 @@ public class ListItem {
     @Column(name = "task_description", nullable = false) // user input
     private String taskName;
 
-    @Column(name = "task_status", nullable = false) // by-default as "todo"
-    private String taskStatus = "todo";
+    @Column(name = "task_status", nullable = false) // by-default as "in-progress"
+    private String taskStatus = "in-progress";
 
-    @Column(name = "task_created_at", nullable = false)
+    @Column(name = "task_created_at", nullable = false, updatable = false)
     private String taskCreatedAt = java.time.LocalDateTime.now().toString();
 
     @Column(name = "task_updated_at", nullable = false)
